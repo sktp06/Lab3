@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import EventListView from '../views/EventListView.vue'
 import AboutView from '../views/AboutView.vue'
 import CategoriesView from '../views/CategoriesView.vue'
+import StudentView from '../views/StudentView.vue'
 
 const routes = [
   {
@@ -28,6 +29,11 @@ const routes = [
     // component: () =>
     //   import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
     component: CategoriesView
+  },
+  {
+    path: '/student',
+    name: 'student',
+    component: StudentView
   }
 ]
 

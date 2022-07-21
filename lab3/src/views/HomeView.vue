@@ -4,18 +4,24 @@
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
+  <div class="events">
+    <!-- <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+    <Categories v-for="event in events" :key="event.id" :event="event" />
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import EventCard from '@/components/EventCard.vue'
-
+import Categories from '@/components/Categories.vue'
 export default {
   name: 'HomeView',
   components: {
     //   HelloWorld
     // }
-    EventCard //register it as a child component
+    EventCard, //register it as a child component
+    Categories
   },
   data() {
     return {

@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <div class="events">
     <!-- <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <EventCard v-for="event in events" :key="event.id" :event="event"/>
+    <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
 
@@ -13,9 +13,9 @@ import EventCard from '@/components/EventCard.vue'
 export default {
   name: 'HomeView',
   components: {
-  //   HelloWorld
-  // }
-  EventCard, //register it as a child component
+    //   HelloWorld
+    // }
+    EventCard //register it as a child component
   },
   data() {
     return {
@@ -52,9 +52,16 @@ export default {
           time: '11:00',
           petsAllowed: false,
           organizer: 'Carey Wales'
-        },
-      ],
+        }
+      ]
     }
-  },
+  }
 }
 </script>
+<style scoped>
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>

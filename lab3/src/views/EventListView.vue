@@ -16,6 +16,7 @@
 // @ is an alias to /src
 import EventCard from '@/components/EventCard.vue'
 import Categories from '@/components/Categories.vue'
+import axios from 'axios'
 export default {
   name: 'EventListView',
   components: {
@@ -65,7 +66,14 @@ export default {
     }
   },
   created() {
-    //get events from mock db when component is created
+    axios
+      .get('http://localhost:3004/events')
+      .then((response)) => {
+        this.events =response.data
+      })
+      .catch((error)) => {
+        console.log(error)
+      })
   }
 }
 </script>

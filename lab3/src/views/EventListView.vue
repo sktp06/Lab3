@@ -68,10 +68,10 @@ export default {
   created() {
     axios
       .get('http://localhost:3004/events')
-      .then((response)) => {
-        this.events =response.data
+      .then((response) => {
+        this.events = response.data
       })
-      .catch((error)) => {
+      .catch((error) => {
         console.log(error)
       })
   }

@@ -1,4 +1,5 @@
 <template>
+  <h1>Events For Good</h1>
   <div class="events">
     <!-- <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->

@@ -2,7 +2,7 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <EventCard/>
+    <EventCard v-for="event in events" :key="event.id" :event="event"/>
   </div>
 </template>
 

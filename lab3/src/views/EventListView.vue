@@ -17,7 +17,7 @@
 import EventCard from '@/components/EventCard.vue'
 import Categories from '@/components/Categories.vue'
 export default {
-  name: 'HomeView',
+  name: 'EventListView',
   components: {
     //   HelloWorld
     // }
